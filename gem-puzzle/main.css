@@ -1,0 +1,132 @@
+body{
+    font-size: 16px;
+    font-family: "Roboto-Regular",helvetica,sans-serif;
+    background-color: rgb(7, 11, 123);
+    color: white;
+    margin: 0;
+}
+
+
+div{
+    /* border: 1px black solid; */
+    padding: 5px;
+}
+
+canvas{
+    border: 1px black solid;
+}
+
+button{
+    color: white;
+    background-color: rgb(6, 98, 236);
+    height: 40px;
+    border-radius: 10px;
+}
+
+canvas{
+    background-color: rgb(6, 98, 236);
+    border-radius: 20px;
+}
+
+ul{
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none; 
+    padding: 5px;
+}
+
+.controllers{
+    display: flex;
+    padding: 0;
+}
+
+.frame-controller{
+    display: flex;
+    padding: 0;
+}
+
+.game-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-panel{
+    display: flex;
+}
+
+.frame-info{
+    display: flex;
+}
+
+span{
+    align-self: center;
+}
+
+.size__bar__chooser{
+    display: flex;
+}
+
+.win-panel{
+    position: absolute;    
+    list-style: none;
+    text-align: center;
+    background-color: blue;
+    z-index: 2;
+    top: 410px;
+    left: 700px;
+}
+
+.result-panel{
+    position: absolute;    
+    list-style: none;
+    text-align: center;
+    top: 260px;
+    left: 410px;
+    background-color: blue;
+    
+}
+
+.layer{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+#audio{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+    canvas{
+        width: 300px;
+        height: 300px;
+    }
+
+    .win-panel{        
+        top: 410px;
+        left: 0px;
+        padding: 0;
+    }
+    
+    .result-panel{   
+        width: 190px;
+        top: 260px;
+        left: 50px;
+    }
+
+    .layer{
+        padding: 0;
+    }
+}
